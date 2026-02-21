@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Filipino Society – Cartoon Infographic</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka+One&family=Patrick+Hand&family=Caveat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        :root {
+            --parchment: #F5E6C8;
+            --parchment-dark: #E8D09A;
+            --parchment-deep: #D4B87A;
+            --ink: #1A0A00;
+            --brown: #7B3F00;
+            --brown2: #A0522D;
+            --red: #C0392B;
+            --red-light: #E74C3C;
+            --green: #1E6B3A;
+            --green-light: #27AE60;
+            --blue: #1A5276;
+            --blue-light: #2E86C1;
+            --purple: #6C3483;
+            --purple-light: #8E44AD;
+            --gold: #D4AC0D;
+            --gold-light: #F1C40F;
+            --teal: #117A65;
+            --teal-light: #1ABC9C;
+            --orange: #BA4A00;
+            --orange-light: #E67E22;
+            --outline: 3px solid #1A0A00;
+            --outline-fat: 4px solid #1A0A00;
+            --shadow-cartoon: 5px 5px 0px #1A0A00;
+            --shadow-cartoon-sm: 3px 3px 0px #1A0A00;
+            --radius-cartoon: 18px;
+            --font-title: 'Fredoka One', cursive;
+            --font-body: 'Patrick Hand', cursive;
+            --font-accent: 'Bubblegum Sans', cursive;
+            --font-hand: 'Caveat', cursive;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: #C8A97A;
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23A0784A' fill-opacity='0.25'%3E%3Cpath d='M40 0 L45 35 L80 40 L45 45 L40 80 L35 45 L0 40 L35 35 Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            color: var(--ink);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .page-wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            background: var(--parchment);
+            background-image: repeating-linear-gradient(0deg, transparent, transparent 28px, rgba(160, 120, 74, 0.12) 28px, rgba(160, 120, 74, 0.12) 29px);
+            border-left: 8px solid #7B5A2A;
+            border-right: 8px solid #7B5A2A;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+        }
+
+        /* === HEADER === */
+        .header {
+            background: var(--brown);
+            position: relative;
+            overflow: hidden;
+            border-bottom: var(--outline-fat);
+        }
+
+        .header-sky {
+            background: linear-gradient(180deg, #4A90D9 0%, #87CEEB 60%, #B8E4F9 100%);
+            padding: 44px 170px 0;
+            text-align: center;
+            position: relative;
+            min-height: 320px;
+            overflow: hidden;
+        }
+
+        .sun {
+            position: absolute;
+            top: 14px;
+            right: 30px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .sun-circle {
+            width: 60px;
+            height: 60px;
+            background: var(--gold-light);
+            border-radius: 50%;
+            border: 4px solid var(--ink);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            box-shadow: 3px 3px 0 var(--ink);
+            animation: sunPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes sunPulse {
+
+            0%,
+            100% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.07)
+            }
+        }
+
+        .cloud {
+            position: absolute;
+            background: white;
+            border-radius: 50px;
+            border: 3px solid var(--ink);
+            box-shadow: var(--shadow-cartoon-sm);
+            animation: cloudFloat 6s ease-in-out infinite;
+        }
+
+        @keyframes cloudFloat {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-8px)
+            }
+        }
+
+        .header-title-block {
+            position: relative;
+            z-index: 10;
+            display: inline-block;
+            background: var(--parchment);
+            border: var(--outline-fat);
+            border-radius: 20px;
+            padding: 16px 36px;
+            box-shadow: var(--shadow-cartoon);
+            margin-bottom: 10px;
+            transform: rotate(-1deg);
+        }
+
+        .header-title-block h1 {
+            font-family: var(--font-title);
+            font-size: clamp(1.6rem, 4vw, 3rem);
+            color: var(--brown);
+            line-height: 1.1;
+            text-shadow: 3px 3px 0 var(--parchment-deep);
+        }
+
+        .header-subtitle-tag {
+            display: inline-block;
+            background: var(--red);
+            color: white;
+            font-family: var(--font-accent);
+            font-size: 0.9rem;
+            padding: 5px 16px;
+            border-radius: 20px;
+            border: 3px solid var(--ink);
+            box-shadow: var(--shadow-cartoon-sm);
+            transform: rotate(1.5deg);
+            margin-top: 6px;
+        }
+
+        .mountains {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 130px;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        /* Characters sit above mountains */
+        .header-sky>div[style*="position:absolute"] {
+            z-index: 20;
+        }
+
+        .header-ground {
+            background: linear-gradient(180deg, #5C8C3A 0%, #3D6B1A 100%);
+            height: 62px;
+            border-top: 4px solid var(--ink);
+            position: relative;
+        }
+
+        .header-bottom-bar {
+            background: var(--brown);
+            padding: 14px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            border-top: var(--outline-fat);
+        }
+
+        .nav-scroll-btn {
+            font-family: var(--font-accent);
+            font-size: 0.85rem;
+            background: var(--parchment);
+            color: var(--ink);
+            border: 3px solid var(--ink);
+            border-radius: 30px;
+            padding: 7px 18px;
+            text-decoration: none;
+            box-shadow: var(--shadow-cartoon-sm);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .nav-scroll-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 var(--ink);
+        }
+
+        .export-btn {
+            font-family: var(--font-accent);
+            font-size: 0.85rem;
+            background: var(--gold);
+            color: var(--ink);
+            border: 3px solid var(--ink);
+            border-radius: 30px;
+            padding: 7px 18px;
+            box-shadow: var(--shadow-cartoon-sm);
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .export-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 var(--ink);
+        }
+
+        /* === CONTENT === */
+        .content {
+            padding: 0 30px 40px;
+            overflow: visible;
+        }
+
+        @media(max-width:700px) {
+            .content {
+                padding: 0 14px 30px;
+            }
+        }
+
+        section {
+            overflow: visible;
+        }
+
+        /* === SECTION BANNER === */
+        .section-banner {
+            margin: 50px 0 30px;
+            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-top: var(--outline-fat);
+            border-bottom: var(--outline-fat);
+            border-left: var(--outline-fat);
+            border-right: var(--outline-fat);
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .sb-brown {
+            background: var(--brown2);
+        }
+
+        .sb-pink {
+            background: #C0396B;
+        }
+
+        .sb-blue {
+            background: var(--blue);
+        }
+
+        .section-banner h2 {
+            font-family: var(--font-title);
+            font-size: 1.8rem;
+            color: white;
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .sb-icon {
+            font-size: 2.2rem;
+            background: white;
+            border-radius: 50%;
+            border: 3px solid var(--ink);
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-cartoon-sm);
+            flex-shrink: 0;
+        }
+
+        .sb-ribbon {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--gold-light);
+            border: 3px solid var(--ink);
+            border-radius: 6px;
+            padding: 4px 14px;
+            font-family: var(--font-hand);
+            font-size: 1rem;
+            box-shadow: var(--shadow-cartoon-sm);
+            white-space: nowrap;
+        }
+
+        @media(max-width:700px) {
+            .section-banner {
+                margin: 30px 0 20px;
+                padding: 14px 20px;
+            }
+
+            .sb-ribbon {
+                display: none;
+            }
+
+            .section-banner h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* === CARTOON CARD === */
+        .cc {
+            background: white;
+            border: var(--outline-fat);
+            border-radius: var(--radius-cartoon);
+            box-shadow: var(--shadow-cartoon);
+            padding: 22px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cc:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 var(--ink);
+        }
+
+        .cc::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            border-radius: var(--radius-cartoon) var(--radius-cartoon) 0 0;
+        }
+
+        .cc-brown::before {
+            background: var(--brown2);
+        }
+
+        .cc-green::before {
+            background: var(--green-light);
+        }
+
+        .cc-blue::before {
+            background: var(--blue-light);
+        }
+
+        .cc-red::before {
+            background: var(--red);
+        }
+
+        .cc-gold::before {
+            background: var(--gold);
+        }
+
+        .cc-purple::before {
+            background: var(--purple-light);
+        }
+
+        .cc-teal::before {
+            background: var(--teal-light);
+        }
+
+        .cc-orange::before {
+            background: var(--orange-light);
+        }
+
+        .cc h3 {
+            font-family: var(--font-accent);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .cc ul {
+            list-style: none;
+        }
+
+        .cc ul li {
+            padding: 4px 0;
+            font-size: 0.95rem;
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .cc ul li::before {
+            content: '✦';
+            color: var(--gold);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* === PYRAMID === */
+        .pyramid-wrap {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .pyr-tier {
+            margin-bottom: 6px;
+            cursor: pointer;
+        }
+
+        .pyr-tier.tier-1 .pyr-main {
+            max-width: 46%;
+            margin: 0 auto;
+        }
+
+        .pyr-tier.tier-2 .pyr-main {
+            max-width: 65%;
+            margin: 0 auto;
+        }
+
+        .pyr-tier.tier-3 .pyr-main {
+            max-width: 83%;
+            margin: 0 auto;
+        }
+
+        .pyr-tier.tier-4 .pyr-main {
+            max-width: 100%;
+        }
+
+        .pyr-main {
+            border: var(--outline-fat);
+            border-radius: 16px;
+            padding: 14px 46px 14px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            box-shadow: var(--shadow-cartoon);
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .pyr-main::after {
+            content: '▼';
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.9rem;
+            opacity: 0.6;
+            color: white;
+        }
+
+        .pyr-main:hover {
+            filter: brightness(1.08);
+            transform: translateY(-2px);
+        }
+
+        .pt1 {
+            background: linear-gradient(135deg, #8B4513, #C0562A);
+        }
+
+        .pt2 {
+            background: linear-gradient(135deg, #A0610A, #D4853E);
+        }
+
+        .pt3 {
+            background: linear-gradient(135deg, #1E6B3A, #27AE60);
+        }
+
+        .pt4 {
+            background: linear-gradient(135deg, #1A5276, #2E86C1);
+        }
+
+        .pyr-emoji {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .pyr-name {
+            font-family: var(--font-title);
+            font-size: 1.2rem;
+            color: white;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .pyr-sub {
+            font-family: var(--font-hand);
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .pyr-detail {
+            display: none;
+            background: var(--parchment);
+            border: 3px solid var(--ink);
+            border-radius: 14px;
+            padding: 14px 20px;
+            font-size: 0.95rem;
+            line-height: 1.65;
+            margin: 6px 0 8px;
+            box-shadow: 4px 4px 0 var(--ink);
+            animation: dropDown 0.25s ease;
+        }
+
+        .pyr-detail.open {
+            display: block;
+        }
+
+        @keyframes dropDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        /* === BAR CHART === */
+        .chart-box {
+            background: white;
+            border: var(--outline-fat);
+            border-radius: var(--radius-cartoon);
+            box-shadow: var(--shadow-cartoon);
+            padding: 24px;
+        }
+
+        .chart-box h3 {
+            font-family: var(--font-accent);
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+
+        .bar-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 13px;
+        }
+
+        .bar-lbl {
+            width: 110px;
+            font-family: var(--font-hand);
+            font-size: 1rem;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 32px;
+            background: var(--parchment-dark);
+            border: 3px solid var(--ink);
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 30px;
+            border-right: 3px solid var(--ink);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            font-family: var(--font-title);
+            font-size: 0.8rem;
+            color: white;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 1s cubic-bezier(0.34, 1.4, 0.64, 1);
+            position: relative;
+        }
+
+        .bar-fill::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(255, 255, 255, 0.15) 8px, rgba(255, 255, 255, 0.15) 16px);
+        }
+
+        .bar-fill.go {
+            transform: scaleX(1);
+        }
+
+        /* === FLOWCHART === */
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            max-width: 380px;
+            margin: 0 auto;
+        }
+
+        .flow-node {
+            background: white;
+            border: var(--outline-fat);
+            border-radius: 16px;
+            padding: 12px 18px;
+            text-align: center;
+            width: 100%;
+            box-shadow: var(--shadow-cartoon);
+            font-family: var(--font-body);
+            font-size: 0.92rem;
+            transition: transform 0.2s;
+        }
+
+        .flow-node:hover {
+            transform: scale(1.03);
+        }
+
+        .flow-node strong {
+            font-family: var(--font-accent);
+            display: block;
+            font-size: 0.98rem;
+            margin-bottom: 3px;
+        }
+
+        .fn-purple {
+            border-color: var(--purple);
+            background: #F5EEF8;
+        }
+
+        .fn-blue {
+            border-color: var(--blue);
+            background: #EBF5FB;
+        }
+
+        .fn-red {
+            border-color: var(--red);
+            background: #FEF0EF;
+        }
+
+        .fn-brown {
+            border-color: var(--brown);
+            background: #FDF0E6;
+        }
+
+        .flow-arrow {
+            font-size: 1.6rem;
+            color: var(--ink);
+            line-height: 1;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* === SECTION B === */
+        .babaylan-banner {
+            background: linear-gradient(135deg, #6C3483, #9B59B6, #C0396B);
+            border: var(--outline-fat);
+            border-radius: 24px;
+            box-shadow: var(--shadow-cartoon);
+            padding: 30px 30px 24px;
+            text-align: center;
+            margin: 20px 0 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .babaylan-banner::before {
+            content: '✦';
+            position: absolute;
+            font-size: 180px;
+            opacity: 0.06;
+            top: -30px;
+            right: -10px;
+            color: white;
+            line-height: 1;
+        }
+
+        .babaylan-banner h3 {
+            font-family: var(--font-title);
+            font-size: 2.2rem;
+            color: var(--gold-light);
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
+            margin-bottom: 10px;
+        }
+
+        .babaylan-banner p {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .women-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .woman-card {
+            background: white;
+            border: var(--outline-fat);
+            border-radius: 20px;
+            padding: 20px 14px;
+            text-align: center;
+            box-shadow: var(--shadow-cartoon);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .woman-card:hover {
+            transform: translate(-4px, -4px) rotate(-1deg);
+            box-shadow: 8px 8px 0 var(--ink);
+        }
+
+        .woman-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+        }
+
+        .wc-pink::after {
+            background: #E91E8C;
+        }
+
+        .wc-gold::after {
+            background: var(--gold);
+        }
+
+        .wc-purple::after {
+            background: var(--purple-light);
+        }
+
+        .wc-teal::after {
+            background: var(--teal-light);
+        }
+
+        .wc-red::after {
+            background: var(--red);
+        }
+
+        .wc-green::after {
+            background: var(--green-light);
+        }
+
+        .woman-icon-wrap {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            border: 3px solid var(--ink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            font-size: 2rem;
+            box-shadow: var(--shadow-cartoon-sm);
+        }
+
+        .woman-card h4 {
+            font-family: var(--font-accent);
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .woman-card p {
+            font-size: 0.82rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .rights-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .right-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 8px 16px;
+            border: 3px solid var(--ink);
+            border-radius: 30px;
+            font-family: var(--font-accent);
+            font-size: 0.85rem;
+            box-shadow: var(--shadow-cartoon-sm);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .right-chip:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 var(--ink);
+        }
+
+        /* === MAP === */
+        .map-section {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+
+        @media(max-width:900px) {
+            .map-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .map-card {
+            background: #D6EAF8;
+            border: var(--outline-fat);
+            border-radius: var(--radius-cartoon);
+            box-shadow: var(--shadow-cartoon);
+            padding: 16px;
+        }
+
+        .map-card h4 {
+            font-family: var(--font-accent);
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 10px;
+            color: var(--blue);
+        }
+
+        #phil-map {
+            width: 100%;
+            max-width: 220px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        #phil-map path,
+        #phil-map circle {
+            stroke: var(--ink);
+            stroke-width: 2.5;
+            transition: filter 0.3s, opacity 0.3s;
+            stroke-linejoin: round;
+        }
+
+        #phil-map path:hover,
+        #phil-map circle:hover {
+            filter: brightness(1.2);
+        }
+
+        .r-luzon {
+            fill: #7CB518;
+        }
+
+        .r-visayas {
+            fill: #2E86C1;
+        }
+
+        .r-mindanao {
+            fill: #E67E22;
+        }
+
+        .map-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .leg-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
+        .leg-item:hover {
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+        .leg-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 6px;
+            border: 2px solid var(--ink);
+            flex-shrink: 0;
+        }
+
+        /* === GROUP PANELS === */
+        .group-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .g-panel {
+            border: var(--outline-fat);
+            border-radius: var(--radius-cartoon);
+            overflow: hidden;
+            box-shadow: var(--shadow-cartoon);
+        }
+
+        .g-panel-head {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 20px;
+            cursor: pointer;
+            color: white;
+            transition: filter 0.2s;
+            user-select: none;
+        }
+
+        .g-panel-head:hover {
+            filter: brightness(1.08);
+        }
+
+        .gp-green .g-panel-head {
+            background: var(--green);
+        }
+
+        .gp-blue .g-panel-head {
+            background: var(--blue);
+        }
+
+        .gp-orange .g-panel-head {
+            background: var(--orange);
+        }
+
+        .g-panel-head h3 {
+            font-family: var(--font-title);
+            font-size: 1.15rem;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .chevron {
+            margin-left: auto;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+
+        .g-panel.open .chevron {
+            transform: rotate(180deg);
+        }
+
+        .g-panel-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s;
+            font-size: 0.93rem;
+            line-height: 1.7;
+        }
+
+        .g-panel.open .g-panel-body {
+            max-height: 600px;
+            padding: 16px 20px;
+        }
+
+        .gp-green .g-panel-body {
+            background: #E9F7EF;
+        }
+
+        .gp-blue .g-panel-body {
+            background: #EBF5FB;
+        }
+
+        .gp-orange .g-panel-body {
+            background: #FEF9E7;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .g-tag {
+            padding: 4px 12px;
+            border: 2px solid var(--ink);
+            border-radius: 20px;
+            font-family: var(--font-accent);
+            font-size: 0.8rem;
+            box-shadow: 2px 2px 0 var(--ink);
+        }
+
+        .tg-green {
+            background: var(--green-light);
+            color: white;
+        }
+
+        .tg-blue {
+            background: var(--blue-light);
+            color: white;
+        }
+
+        .tg-orange {
+            background: var(--orange-light);
+            color: white;
+        }
+
+        /* === MODAL === */
+        #modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(3px);
+            z-index: 3000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #modal-overlay.open {
+            display: flex;
+        }
+
+        #modal-box {
+            background: var(--parchment);
+            border: var(--outline-fat);
+            border-radius: 24px;
+            box-shadow: 8px 8px 0 var(--ink);
+            padding: 32px 28px 24px;
+            max-width: 420px;
+            width: 90%;
+            position: relative;
+            animation: popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.7);
+                opacity: 0
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+
+        #modal-close {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: var(--red);
+            color: white;
+            border: 3px solid var(--ink);
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-cartoon-sm);
+            font-family: var(--font-title);
+            transition: transform 0.15s;
+        }
+
+        #modal-close:hover {
+            transform: scale(1.15);
+        }
+
+        /* === TOOLTIP === */
+        .tooltip {
+            position: fixed;
+            background: var(--ink);
+            color: var(--parchment);
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-family: var(--font-hand);
+            font-size: 0.9rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 2000;
+            max-width: 180px;
+            line-height: 1.5;
+            border: 2px solid var(--parchment-dark);
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+
+        /* === FOOTER === */
+        footer {
+            background: var(--brown);
+            border-top: var(--outline-fat);
+            padding: 40px 30px 30px;
+            color: var(--parchment);
+        }
+
+        footer h4 {
+            font-family: var(--font-title);
+            font-size: 1.3rem;
+            color: var(--gold-light);
+            margin-bottom: 16px;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .ref-item {
+            padding: 8px 0;
+            font-size: 0.9rem;
+            border-bottom: 1px dashed rgba(245, 230, 200, 0.3);
+            font-style: italic;
+            display: flex;
+            gap: 10px;
+        }
+
+        .ref-item::before {
+            content: '📜';
+            flex-shrink: 0;
+        }
+
+        .footer-credit {
+            margin-top: 24px;
+            text-align: center;
+            font-family: var(--font-hand);
+            font-size: 1rem;
+            opacity: 0.6;
+        }
+
+        /* === FADE IN === */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* === MISC === */
+        .speech-bubble {
+            background: white;
+            border: var(--outline-fat);
+            border-radius: 16px;
+            padding: 14px 18px;
+            box-shadow: var(--shadow-cartoon);
+            font-family: var(--font-hand);
+            font-size: 1rem;
+            position: relative;
+            text-align: center;
+            max-width: 380px;
+            margin: 0 auto 36px;
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 10px solid transparent;
+            border-top-color: var(--ink);
+            z-index: 0;
+        }
+
+        .speech-bubble::before {
+            content: '';
+            position: absolute;
+            bottom: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 9px solid transparent;
+            border-top-color: white;
+            z-index: 1;
+        }
+
+        .scroll-divider {
+            text-align: center;
+            font-family: var(--font-hand);
+            font-size: 1.4rem;
+            color: var(--brown2);
+            opacity: 0.6;
+            padding: 10px 0;
+            letter-spacing: 0.4em;
+        }
+
+        .did-you-know {
+            background: var(--gold-light);
+            border: var(--outline-fat);
+            border-radius: 20px;
+            box-shadow: var(--shadow-cartoon);
+            padding: 22px 22px 18px 26px;
+            margin: 28px 0;
+            position: relative;
+        }
+
+        .did-you-know::before {
+            content: '💡';
+            position: absolute;
+            top: -20px;
+            left: 18px;
+            font-size: 2rem;
+            filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.3));
+        }
+
+        .did-you-know h4 {
+            font-family: var(--font-title);
+            margin-bottom: 8px;
+            margin-top: 6px;
+            font-size: 1rem;
+        }
+
+        .did-you-know p {
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .two-col>* {
+            min-width: 0;
+        }
+
+        @media(max-width:820px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tooltip" id="tip"></div>
+    <div id="modal-overlay" onclick="closeModal()">
+        <div id="modal-box" onclick="event.stopPropagation()">
+            <button id="modal-close" onclick="closeModal()">✕</button>
+            <div style="text-align:center;font-size:3rem;margin-bottom:8px;" id="modal-icon"></div>
+            <div id="modal-title"></div>
+            <div id="modal-text"></div>
+        </div>
+    </div>
+
+    <div class="page-wrap">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-sky">
+                <!-- Sun -->
+                <div class="sun" aria-hidden="true">
+                    <div class="sun-circle"></div>
+                    <!-- Rays -->
+                    <svg style="position:absolute;top:0;left:0;width:80px;height:80px;" viewBox="0 0 80 80">
+                        <g stroke="#1A0A00" stroke-width="2" fill="#F1C40F">
+                            <rect x="36" y="2" width="8" height="18" rx="4" />
+                            <rect x="36" y="60" width="8" height="18" rx="4" />
+                            <rect x="2" y="36" width="18" height="8" rx="4" />
+                            <rect x="60" y="36" width="18" height="8" rx="4" />
+                            <rect x="12" y="12" width="8" height="18" rx="4" transform="rotate(45 16 21)" />
+                            <rect x="52" y="12" width="8" height="18" rx="4" transform="rotate(-45 56 21)" />
+                            <rect x="12" y="50" width="8" height="18" rx="4" transform="rotate(-45 16 59)" />
+                            <rect x="52" y="50" width="8" height="18" rx="4" transform="rotate(45 56 59)" />
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Clouds -->
+                <div class="cloud" style="width:100px;height:38px;top:28px;left:50px;animation-delay:0s;">
+                    <div
+                        style="position:absolute;width:54px;height:50px;border-radius:50%;top:-22px;left:10px;background:white;border:3px solid var(--ink);">
+                    </div>
+                    <div
+                        style="position:absolute;width:40px;height:40px;border-radius:50%;top:-16px;left:45px;background:white;border:3px solid var(--ink);">
+                    </div>
+                </div>
+                <div class="cloud" style="width:80px;height:30px;top:18px;left:220px;animation-delay:2.5s;">
+                    <div
+                        style="position:absolute;width:44px;height:42px;border-radius:50%;top:-18px;left:8px;background:white;border:3px solid var(--ink);">
+                    </div>
+                    <div
+                        style="position:absolute;width:32px;height:32px;border-radius:50%;top:-12px;left:36px;background:white;border:3px solid var(--ink);">
+                    </div>
+                </div>
+                <div class="cloud" style="width:90px;height:34px;top:22px;right:220px;animation-delay:1.2s;">
+                    <div
+                        style="position:absolute;width:50px;height:46px;border-radius:50%;top:-20px;left:10px;background:white;border:3px solid var(--ink);">
+                    </div>
+                    <div
+                        style="position:absolute;width:36px;height:36px;border-radius:50%;top:-14px;left:44px;background:white;border:3px solid var(--ink);">
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <div class="header-title-block">
+                    <div style="font-family:var(--font-hand);font-size:0.85rem;color:var(--brown2);margin-bottom:4px;">
+                        BSIT 3A · USTP · PICPE</div>
+                    <h1>Ancient Filipino Society</h1>
+                    <div style="font-family:var(--font-hand);font-size:0.95rem;color:var(--brown2);margin-top:6px;">
+                        Women, Culture &amp; Diversity</div>
+                    <div class="header-subtitle-tag">Pre-Colonial Philippines ⚔️</div>
+                </div>
+
+                <!-- Cartoon character: Datu -->
+                <div style="position:absolute;bottom:0;left:55px;z-index:20;">
+                    <svg width="65" height="96" viewBox="0 0 65 96" aria-label="Cartoon Datu">
+                        <polygon points="14,20 19,8 24,20 29,6 34,20 39,8 44,20" fill="#F1C40F" stroke="#1A0A00"
+                            stroke-width="2.5" />
+                        <circle cx="29" cy="32" r="17" fill="#D4A574" stroke="#1A0A00" stroke-width="3" />
+                        <circle cx="22" cy="29" r="3.5" fill="white" stroke="#1A0A00" stroke-width="2" />
+                        <circle cx="36" cy="29" r="3.5" fill="white" stroke="#1A0A00" stroke-width="2" />
+                        <circle cx="23" cy="30" r="1.8" fill="#1A0A00" />
+                        <circle cx="37" cy="30" r="1.8" fill="#1A0A00" />
+                        <path d="M22,38 Q29,44 36,38" fill="none" stroke="#1A0A00" stroke-width="2.5"
+                            stroke-linecap="round" />
+                        <ellipse cx="29" cy="46" rx="3" ry="2" fill="#1A0A00" opacity="0.2" />
+                        <rect x="13" y="48" width="32" height="36" rx="10" fill="#8B4513" stroke="#1A0A00"
+                            stroke-width="3" />
+                        <path d="M13,56 Q29,64 45,56" fill="#D4AC0D" stroke="#1A0A00" stroke-width="2" />
+                        <rect x="16" y="80" width="12" height="15" rx="6" fill="#6B3410" stroke="#1A0A00"
+                            stroke-width="2.5" />
+                        <rect x="30" y="80" width="12" height="15" rx="6" fill="#6B3410" stroke="#1A0A00"
+                            stroke-width="2.5" />
+                        <line x1="54" y1="4" x2="54" y2="86" stroke="#7B4A00" stroke-width="4" stroke-linecap="round" />
+                        <polygon points="50,4 54,0 58,4 54,16" fill="#C0C0C0" stroke="#1A0A00" stroke-width="2" />
+                    </svg>
+                </div>
+
+                <!-- Cartoon character: Babaylan -->
+                <div style="position:absolute;bottom:0;right:55px;z-index:20;">
+                    <svg width="65" height="96" viewBox="0 0 65 96" aria-label="Cartoon Babaylan">
+                        <ellipse cx="29" cy="14" rx="20" ry="12" fill="#1A0A00" />
+                        <path d="M9,14 Q19,3 29,8 Q39,3 49,14" fill="#D4AC0D" stroke="#1A0A00" stroke-width="2.5" />
+                        <circle cx="18" cy="10" r="4.5" fill="#E74C3C" stroke="#1A0A00" stroke-width="2" />
+                        <circle cx="29" cy="6" r="4.5" fill="#F1C40F" stroke="#1A0A00" stroke-width="2" />
+                        <circle cx="40" cy="10" r="4.5" fill="#E74C3C" stroke="#1A0A00" stroke-width="2" />
+                        <circle cx="29" cy="30" r="16" fill="#C4956A" stroke="#1A0A00" stroke-width="3" />
+                        <circle cx="22" cy="27" r="3" fill="white" stroke="#1A0A00" stroke-width="2" />
+                        <circle cx="36" cy="27" r="3" fill="white" stroke="#1A0A00" stroke-width="2" />
+                        <circle cx="23" cy="28" r="1.5" fill="#1A0A00" />
+                        <circle cx="37" cy="28" r="1.5" fill="#1A0A00" />
+                        <path d="M22,35 Q29,41 36,35" fill="none" stroke="#1A0A00" stroke-width="2.5"
+                            stroke-linecap="round" />
+                        <path d="M12,46 L8,88 L29,82 L50,88 L46,46 Z" fill="#9B59B6" stroke="#1A0A00"
+                            stroke-width="3" />
+                        <path d="M12,54 Q29,62 46,54" fill="#8E44AD" stroke="#1A0A00" stroke-width="2" />
+                        <line x1="20" y1="60" x2="28" y2="60" stroke="#F1C40F" stroke-width="2.5" />
+                        <line x1="30" y1="60" x2="38" y2="60" stroke="#F1C40F" stroke-width="2.5" />
+                        <line x1="18" y1="70" x2="40" y2="70" stroke="#F1C40F" stroke-width="2.5" />
+                        <line x1="6" y1="50" x2="6" y2="78" stroke="#7B4A00" stroke-width="4" stroke-linecap="round" />
+                        <circle cx="6" cy="46" r="6" fill="#F1C40F" stroke="#1A0A00" stroke-width="2.5" />
+                    </svg>
+                </div>
+
+                <!-- Mountains -->
+                <svg class="mountains" style="z-index:5;" viewBox="0 0 1200 130" preserveAspectRatio="none"
+                    aria-hidden="true">
+                    <path
+                        d="M0,130 L0,70 L90,18 L180,80 L280,28 L400,90 L500,36 L620,82 L720,30 L840,78 L950,22 L1060,72 L1160,38 L1200,62 L1200,130 Z"
+                        fill="#3D6B1A" stroke="#1A0A00" stroke-width="4" />
+                    <path
+                        d="M0,130 L0,90 L110,60 L220,95 L340,64 L460,98 L580,68 L700,104 L820,74 L940,98 L1070,76 L1200,90 L1200,130 Z"
+                        fill="#5C8C3A" stroke="#1A0A00" stroke-width="3" />
+                    <!-- Trees -->
+                    <g fill="#2D5A1A" stroke="#1A0A00" stroke-width="2.5">
+                        <rect x="48" y="98" width="9" height="28" rx="2" fill="#7B4A00" />
+                        <ellipse cx="52" cy="92" rx="20" ry="24" />
+                        <rect x="148" y="102" width="8" height="24" rx="2" fill="#7B4A00" />
+                        <ellipse cx="152" cy="97" rx="17" ry="20" />
+                        <rect x="910" y="100" width="8" height="26" rx="2" fill="#7B4A00" />
+                        <ellipse cx="914" cy="94" rx="18" ry="22" />
+                        <rect x="1060" y="98" width="9" height="28" rx="2" fill="#7B4A00" />
+                        <ellipse cx="1064" cy="92" rx="20" ry="24" />
+                    </g>
+                    <!-- Bamboo -->
+                    <g stroke="#1A0A00" stroke-width="2.5">
+                        <rect x="700" y="78" width="8" height="48" rx="4" fill="#8BC34A" />
+                        <rect x="712" y="68" width="8" height="58" rx="4" fill="#7CB342" />
+                        <line x1="700" y1="90" x2="692" y2="82" stroke="#5D8A20" stroke-width="2.5" />
+                        <line x1="712" y1="82" x2="722" y2="74" stroke="#5D8A20" stroke-width="2.5" />
+                        <line x1="700" y1="106" x2="690" y2="100" stroke="#5D8A20" stroke-width="2.5" />
+                    </g>
+                </svg>
+
+            </div><!-- end sky -->
+
+            <div class="header-ground">
+                <svg style="position:absolute;top:0;left:0;width:100%;height:100%;" viewBox="0 0 1200 62"
+                    preserveAspectRatio="none">
+                    <g fill="#3D6B1A" stroke="#1A0A00" stroke-width="2">
+                        <path d="M98,0 Q102,-14 106,0" />
+                        <path d="M104,0 Q109,-18 114,0" />
+                        <path d="M298,0 Q302,-12 306,0" />
+                        <path d="M498,0 Q503,-16 508,0" />
+                        <path d="M698,0 Q702,-13 707,0" />
+                        <path d="M898,0 Q903,-15 908,0" />
+                        <path d="M1098,0 Q1102,-12 1107,0" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="header-bottom-bar">
+                <button class="export-btn" onclick="exportPDF()">📄 Export PDF</button>
+                <a class="nav-scroll-btn" href="#sec-a">⚔️ Ancient Society</a>
+                <a class="nav-scroll-btn" href="#sec-b">✨ Women</a>
+                <a class="nav-scroll-btn" href="#sec-c">🗺️ Ethnolinguistic</a>
+                <a class="nav-scroll-btn" href="#refs">📚 References</a>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- ===== SECTION A ===== -->
+            <section id="sec-a">
+                <div class="section-banner sb-brown fade-up">
+                    <div class="sb-icon">⚔️</div>
+                    <h2>Ancient Filipino Society</h2>
+                    <div class="sb-ribbon">Section A</div>
+                </div>
+
+                <div class="speech-bubble fade-up">
+                    "Before colonization, the Philippines already had kings, laws, trade routes, and thriving cities!"
+                    🏯
+                </div>
+
+                <!-- Pyramid -->
+                <div class="fade-up">
+                    <h3
+                        style="font-family:var(--font-title);font-size:1.5rem;color:var(--brown);text-align:center;margin-bottom:4px;">
+                        👑 Political Hierarchy</h3>
+                    <p
+                        style="text-align:center;font-family:var(--font-hand);font-size:1rem;color:#777;margin-bottom:16px;">
+                        Tap each tier to learn more!</p>
+                    <div class="pyramid-wrap">
+                        <div class="pyr-tier tier-1" onclick="togglePyr('det1')">
+                            <div class="pyr-main pt1">
+                                <span class="pyr-emoji">👑</span>
+                                <div>
+                                    <div class="pyr-name">Datu</div>
+                                    <div class="pyr-sub">Chieftain</div>
+                                </div>
+                            </div>
+                            <div class="pyr-detail" id="det1"><strong>Datu</strong> — Supreme leader of the barangay.
+                                Held military, judicial, and political authority. Hereditary but could be earned through
+                                battle valor. Expected to be generous and wise.</div>
+                        </div>
+                        <div class="pyr-tier tier-2" onclick="togglePyr('det2')">
+                            <div class="pyr-main pt2">
+                                <span class="pyr-emoji">⚔️</span>
+                                <div>
+                                    <div class="pyr-name">Maharlika</div>
+                                    <div class="pyr-sub">Warrior Nobles</div>
+                                </div>
+                            </div>
+                            <div class="pyr-detail" id="det2"><strong>Maharlika</strong> — Noble warriors comparable to
+                                European knights. Owned land and dependents. Owed military service to the Datu.
+                                Identified by gold ornaments and warrior tattoos.</div>
+                        </div>
+                        <div class="pyr-tier tier-3" onclick="togglePyr('det3')">
+                            <div class="pyr-main pt3">
+                                <span class="pyr-emoji">🌾</span>
+                                <div>
+                                    <div class="pyr-name">Timawa</div>
+                                    <div class="pyr-sub">Free Citizens</div>
+                                </div>
+                            </div>
+                            <div class="pyr-detail" id="det3"><strong>Timawa</strong> — Free people who farmed their own
+                                land and traded freely. Owed no personal service or tribute. Could rise to Maharlika
+                                through achievement and valor.</div>
+                        </div>
+                        <div class="pyr-tier tier-4" onclick="togglePyr('det4')">
+                            <div class="pyr-main pt4">
+                                <span class="pyr-emoji">🏡</span>
+                                <div>
+                                    <div class="pyr-name">Alipin</div>
+                                    <div class="pyr-sub">Dependents / Bondspeople</div>
+                                </div>
+                            </div>
+                            <div class="pyr-detail" id="det4"><strong>Alipin</strong> — Owed service due to debt, war,
+                                or birth. <em>Namamahay</em> had their own homes; <em>sagigilid</em> lived with masters.
+                                Unlike Western slavery, freedom could be purchased at any time.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-divider">〜 〜 〜 〜 〜</div>
+
+                <div class="two-col fade-up">
+                    <!-- Economy -->
+                    <div>
+                        <h3
+                            style="font-family:var(--font-title);font-size:1.35rem;color:var(--green);margin-bottom:14px;">
+                            🌾 Economic Activities</h3>
+                        <div class="chart-box">
+                            <h3>What did barangays do?</h3>
+                            <div class="bar-row">
+                                <span class="bar-lbl">🌾 Farming</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill"
+                                        style="width:85%;background:linear-gradient(90deg,#1E6B3A,#27AE60);">85%</div>
+                                </div>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-lbl">🐟 Fishing</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill"
+                                        style="width:70%;background:linear-gradient(90deg,#1A5276,#2E86C1);">70%</div>
+                                </div>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-lbl">🤝 Trade</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill"
+                                        style="width:62%;background:linear-gradient(90deg,#B7950B,#F1C40F);">62%</div>
+                                </div>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-lbl">🧵 Weaving</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill"
+                                        style="width:50%;background:linear-gradient(90deg,#6C3483,#9B59B6);">50%</div>
+                                </div>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-lbl">🏹 Hunting</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill"
+                                        style="width:38%;background:linear-gradient(90deg,#7B3F00,#A0522D);">38%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cc cc-green" style="margin-top:16px;">
+                            <h3 style="color:var(--green);">🚢 Trade Partners</h3>
+                            <ul>
+                                <li>China — gold, beeswax, rattan</li>
+                                <li>Borneo &amp; Malay states — spices, cloth</li>
+                                <li>India — cultural &amp; religious exchange</li>
+                                <li>Barter using gold dust weight scales</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Laws -->
+                    <div>
+                        <h3
+                            style="font-family:var(--font-title);font-size:1.35rem;color:var(--purple);margin-bottom:14px;">
+                            ⚖️ Laws &amp; Justice</h3>
+                        <div class="flowchart">
+                            <div class="flow-node fn-purple"><strong>⚡ Dispute Arises</strong>Between individuals,
+                                families, or clans</div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="flow-node fn-blue"><strong>🧓 Elder Mediation</strong>Village council hears both
+                                sides</div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="flow-node fn-red"><strong>🔥 Trial by Ordeal</strong>Fire, water, or ritual
+                                combat</div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="flow-node fn-brown"><strong>🪙 Datu Ruling</strong>Verdict + wergild
+                                (compensation)</div>
+                        </div>
+                        <div class="cc cc-purple" style="margin-top:16px;">
+                            <h3 style="color:var(--purple);">📜 Ancient Codes</h3>
+                            <ul>
+                                <li>Maragtas Code — Visayan laws</li>
+                                <li>Kalantiaw Code — 18 statutes</li>
+                                <li>Sanduguan — blood compact pacts</li>
+                                <li>Oral law through datu councils</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="padding-top:14px;">
+                    <div class="did-you-know fade-up">
+                        <h4>Did You Know? 🤔</h4>
+                        <p>The word "barangay" comes from the Malay word for a kind of boat (<em>balangay</em>) used for
+                            migration! A typical barangay had 30–100 households. By the 1500s, Maynila (Manila) was
+                            already a thriving fortified port city with thousands of residents.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION B ===== -->
+            <section id="sec-b">
+                <div class="section-banner sb-pink fade-up">
+                    <div class="sb-icon">✨</div>
+                    <h2>The Role of Women</h2>
+                    <div class="sb-ribbon">Section B</div>
+                </div>
+
+                <div class="babaylan-banner fade-up">
+                    <div style="font-size:3.5rem;margin-bottom:8px;">🌙</div>
+                    <h3>✦ The Babaylan ✦</h3>
+                    <p>Pre-colonial Filipinas were not passive bystanders. The <strong>Babaylan</strong> —
+                        shaman-priestess and community healer — was among the most powerful figures in the barangay. She
+                        communicated with spirits, led harvest rituals, healed the sick, and advised warriors. Mostly
+                        women, sometimes transgender men called <em>bayog</em>. They were the original community
+                        leaders.</p>
+                </div>
+
+                <h3
+                    style="font-family:var(--font-title);font-size:1.4rem;color:#C0396B;text-align:center;margin-bottom:14px;">
+                    🌺 Rights &amp; Privileges of Women</h3>
+                <div class="rights-chips fade-up">
+                    <span class="right-chip" style="background:#FFD6E8;">🏠 Owned Property</span>
+                    <span class="right-chip" style="background:#FFF3CD;">⚖️ Engaged in Trade</span>
+                    <span class="right-chip" style="background:#D5F5E3;">👑 Could Lead as Datu</span>
+                    <span class="right-chip" style="background:#D6EAF8;">📝 Wrote Baybayin</span>
+                    <span class="right-chip" style="background:#F8D7DA;">🌿 Practiced Medicine</span>
+                    <span class="right-chip" style="background:#F3E5F5;">💍 Chose Their Spouse</span>
+                    <span class="right-chip" style="background:#FFF9C4;">👶 Named Children</span>
+                    <span class="right-chip" style="background:#E8F5E9;">🤝 Initiated Divorce</span>
+                </div>
+
+                <div class="women-grid fade-up">
+                    <div class="woman-card wc-pink" onclick="openModal('babaylan')">
+                        <div class="woman-icon-wrap" style="background:#FFD6E8;">🌙</div>
+                        <h4>Babaylan</h4>
+                        <p>Shaman-priestess &amp; spiritual healer of the community</p>
+                    </div>
+                    <div class="woman-card wc-gold" onclick="openModal('trader')">
+                        <div class="woman-icon-wrap" style="background:#FFF3CD;">⚖️</div>
+                        <h4>Trader &amp; Leader</h4>
+                        <p>Ran markets and led barangays as female Datu</p>
+                    </div>
+                    <div class="woman-card wc-green" onclick="openModal('healer')">
+                        <div class="woman-icon-wrap" style="background:#D5F5E3;">🌿</div>
+                        <h4>Herbal Healer</h4>
+                        <p>Expert in medicine, childbirth, and bone-setting</p>
+                    </div>
+                    <div class="woman-card wc-purple" onclick="openModal('artisan')">
+                        <div class="woman-icon-wrap" style="background:#F3E5F5;">🧵</div>
+                        <h4>Master Artisan</h4>
+                        <p>Created t'nalak cloth, pottery, and sacred weaves</p>
+                    </div>
+                    <div class="woman-card wc-teal" onclick="openModal('literate')">
+                        <div class="woman-icon-wrap" style="background:#D0F0ED;">📝</div>
+                        <h4>Literate Scholar</h4>
+                        <p>Read and wrote Baybayin — preserving oral knowledge</p>
+                    </div>
+                    <div class="woman-card wc-red" onclick="openModal('warrior')">
+                        <div class="woman-icon-wrap" style="background:#FDECEA;">🗡️</div>
+                        <h4>Warrior</h4>
+                        <p>Legends like Urduja commanded armies and fleets</p>
+                    </div>
+                </div>
+
+                <div style="padding-top:14px;">
+                    <div class="did-you-know fade-up">
+                        <h4>Baybayin Fun Fact! ✏️</h4>
+                        <p>Early Spanish missionaries documented that almost ALL Filipinos — men AND women — could read
+                            and write in Baybayin before colonization arrived. This made pre-colonial Philippines one of
+                            the most literate societies in all of 16th-century Southeast Asia!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION C ===== -->
+            <section id="sec-c">
+                <div class="section-banner sb-blue fade-up">
+                    <div class="sb-icon">🗺️</div>
+                    <h2>Ethnolinguistic Diversity</h2>
+                    <div class="sb-ribbon">Section C</div>
+                </div>
+
+                <div class="speech-bubble fade-up" style="max-width:420px;">
+                    "Over 175 languages, 3 island groups, 100+ ethnic groups — all uniquely Filipino! 🏝️"
+                </div>
+
+                <div class="map-section fade-up">
+                    <!-- MAP -->
+                    <div class="map-card">
+                        <h4>🗺️ Click a Region!</h4>
+                        <svg id="phil-map" viewBox="0 0 200 360" aria-label="Map of the Philippines">
+                            <rect x="0" y="0" width="200" height="360" fill="#B8E4F9" rx="10" />
+                            <!-- Wave -->
+                            <path
+                                d="M8,340 Q28,334 48,340 Q68,346 88,340 Q108,334 128,340 Q148,346 168,340 Q188,334 196,340"
+                                fill="none" stroke="white" stroke-width="2.5" opacity="0.6" />
+                            <!-- Luzon -->
+                            <g onclick="highlightMap('luzon')"
+                                onmouseenter="showTip(event,'Luzon','Tagalog · Ilocano · Kapampangan · Bicolano\nCordillera: Ifugao, Kalinga, Bontok')"
+                                onmouseleave="hideTip()">
+                                <path class="r-luzon"
+                                    d="M87,12 L99,10 L112,15 L122,26 L128,40 L125,54 L120,66 L130,76 L133,90 L128,104 L120,114 L108,120 L96,122 L84,118 L76,108 L78,93 L71,78 L66,62 L69,46 L78,30 Z" />
+                                <path class="r-luzon"
+                                    d="M44,140 L50,144 L54,158 L51,174 L44,180 L37,175 L36,161 L40,148 Z" />
+                                <path class="r-luzon" d="M69,126 L82,124 L86,134 L79,146 L68,148 L62,140 L65,130 Z" />
+                                <text x="99" y="74" text-anchor="middle" font-size="10" fill="white"
+                                    font-family="Fredoka One" font-weight="700" pointer-events="none">LUZON</text>
+                            </g>
+                            <!-- Visayas -->
+                            <g onclick="highlightMap('visayas')"
+                                onmouseenter="showTip(event,'Visayas','Cebuano · Hiligaynon · Waray · Kinaray-a\nSama-Badjao sea peoples')"
+                                onmouseleave="hideTip()">
+                                <path class="r-visayas"
+                                    d="M76,132 L90,130 L106,128 L116,132 L118,144 L124,152 L116,160 L104,162 L92,160 L80,162 L70,156 L68,148 L72,138 Z" />
+                                <path class="r-visayas"
+                                    d="M120,136 L132,133 L140,140 L137,153 L125,158 L116,156 L118,145 Z" />
+                                <text x="98" y="148" text-anchor="middle" font-size="9" fill="white"
+                                    font-family="Fredoka One" font-weight="700" pointer-events="none">VISAYAS</text>
+                            </g>
+                            <!-- Mindanao -->
+                            <g onclick="highlightMap('mindanao')"
+                                onmouseenter="showTip(event,'Mindanao','Tausug · Maguindanao · Maranao · Lumad\nBadjao sea nomads · B\'laan · T\'boli')"
+                                onmouseleave="hideTip()">
+                                <path class="r-mindanao"
+                                    d="M64,168 L80,163 L99,165 L116,163 L130,170 L140,182 L144,198 L140,214 L130,224 L114,230 L98,232 L82,226 L68,216 L59,202 L58,186 L60,174 Z" />
+                                <circle class="r-mindanao" cx="52" cy="240" r="7" />
+                                <circle class="r-mindanao" cx="40" cy="251" r="5.5" />
+                                <circle class="r-mindanao" cx="30" cy="259" r="4.5" />
+                                <text x="101" y="200" text-anchor="middle" font-size="10" fill="white"
+                                    font-family="Fredoka One" font-weight="700" pointer-events="none">MINDANAO</text>
+                            </g>
+                            <!-- Boat -->
+                            <g transform="translate(152,232)" opacity="0.75">
+                                <path d="M0,14 L32,14 L28,22 L4,22 Z" fill="#A0522D" stroke="#1A0A00"
+                                    stroke-width="2" />
+                                <line x1="16" y1="1" x2="16" y2="14" stroke="#7B4A00" stroke-width="2.5" />
+                                <path d="M16,3 L30,12 L16,14 Z" fill="#F5E6C8" stroke="#1A0A00" stroke-width="1.5" />
+                            </g>
+                            <!-- Compass -->
+                            <g transform="translate(158,14)">
+                                <circle cx="12" cy="12" r="12" fill="white" stroke="#1A0A00" stroke-width="2"
+                                    opacity="0.85" />
+                                <text x="12" y="8" text-anchor="middle" font-size="8" fill="#1A0A00"
+                                    font-family="Fredoka One">N</text>
+                                <polygon points="12,4 11,12 12,11 13,12" fill="#E74C3C" />
+                                <polygon points="12,22 11,14 12,15 13,14" fill="#1A0A00" />
+                            </g>
+                        </svg>
+                        <div class="map-legend">
+                            <div class="leg-item" onclick="highlightMap('luzon')">
+                                <div class="leg-dot" style="background:#7CB518;"></div>🌿 Luzon
+                            </div>
+                            <div class="leg-item" onclick="highlightMap('visayas')">
+                                <div class="leg-dot" style="background:#2E86C1;"></div>🌊 Visayas
+                            </div>
+                            <div class="leg-item" onclick="highlightMap('mindanao')">
+                                <div class="leg-dot" style="background:#E67E22;"></div>⛰️ Mindanao
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group Accordion -->
+                    <div class="group-accordion">
+                        <div class="g-panel gp-green open" onclick="toggleGPanel(this)">
+                            <div class="g-panel-head">
+                                <span style="font-size:1.8rem;">⛰️</span>
+                                <h3>Highlanders</h3>
+                                <span class="chevron">▼</span>
+                            </div>
+                            <div class="g-panel-body">
+                                <p><strong>Key Groups:</strong> Ifugao, Kalinga, Bontok (Cordillera) · B'laan, T'boli,
+                                    Manobo, Bagobo (Mindanao)</p>
+                                <p>Builders of the UNESCO-listed <strong>Banaue Rice Terraces</strong> — carved over
+                                    2,000 years! They maintained strong clan governance (<em>bodong</em> peace pacts),
+                                    animist beliefs, and rich oral traditions. T'boli women weave the sacred
+                                    <em>t'nalak</em> cloth with designs received through dreams.
+                                </p>
+                                <div class="tag-list">
+                                    <span class="g-tag tg-green">⛰ Terraced Farming</span>
+                                    <span class="g-tag tg-green">🎵 Gangsa Music</span>
+                                    <span class="g-tag tg-green">⚔️ Warrior Tattoos</span>
+                                    <span class="g-tag tg-green">🌿 Forest Medicine</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-panel gp-blue" onclick="toggleGPanel(this)">
+                            <div class="g-panel-head">
+                                <span style="font-size:1.8rem;">⛵</span>
+                                <h3>Sea-Based Groups</h3>
+                                <span class="chevron">▼</span>
+                            </div>
+                            <div class="g-panel-body">
+                                <p><strong>Key Groups:</strong> Badjao (Sea Gypsies), Sama-Dilaut, Tausug, Iranun —
+                                    across the Sulu Sea</p>
+                                <p>The <strong>Badjao</strong> are the "Sea Gypsies" — nomadic seafarers who lived
+                                    aboard boats (<em>lepa</em>) for generations. They free-dive to extraordinary depths
+                                    and navigate by stars alone. The Tausug established the powerful <strong>Sulu
+                                        Sultanate</strong> in 1457 CE.</p>
+                                <div class="tag-list">
+                                    <span class="g-tag tg-blue">🌊 Free-Diving</span>
+                                    <span class="g-tag tg-blue">⚓ Boat-Building</span>
+                                    <span class="g-tag tg-blue">🕌 Sulu Sultanate</span>
+                                    <span class="g-tag tg-blue">🐠 Marine Life</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-panel gp-orange" onclick="toggleGPanel(this)">
+                            <div class="g-panel-head">
+                                <span style="font-size:1.8rem;">🏘️</span>
+                                <h3>Mainstream Lowland Groups</h3>
+                                <span class="chevron">▼</span>
+                            </div>
+                            <div class="g-panel-body">
+                                <p><strong>Key Groups:</strong> Tagalog, Cebuano, Ilocano, Hiligaynon, Kapampangan,
+                                    Bicolano, Waray</p>
+                                <p>These groups formed coastal barangay trade hubs connecting the Philippines to global
+                                    maritime routes. They developed <strong>Baybayin script</strong>, elaborate oral
+                                    epics (<em>Biag ni Lam-ang</em>, <em>Hinilawod</em>), and inter-barangay alliance
+                                    networks. Maynila was already a thriving port before the Spanish arrived.</p>
+                                <div class="tag-list">
+                                    <span class="g-tag tg-orange">📜 Baybayin Script</span>
+                                    <span class="g-tag tg-orange">🏙 Port Cities</span>
+                                    <span class="g-tag tg-orange">🤝 Barter Trade</span>
+                                    <span class="g-tag tg-orange">🎭 Epic Poetry</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cc cc-gold fade-up">
+                            <h3 style="color:var(--gold);">📊 Quick Numbers!</h3>
+                            <ul>
+                                <li>🗣️ Over <strong>175 living languages</strong> in the Philippines</li>
+                                <li>👥 8 major groups = ~90% of population</li>
+                                <li>🏔️ 14–17 million indigenous peoples today</li>
+                                <li>📜 IPRA (1997) protects ancestral domain rights</li>
+                                <li>🌏 3rd largest English-speaking nation globally</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- end content -->
+
+        <!-- FOOTER -->
+        <footer id="refs">
+            <div style="max-width:900px;margin:0 auto;">
+                <h4>📚 References</h4>
+                <div class="ref-item">Agoncillo, T. A. (1990). <em>History of the Filipino People</em> (8th ed.).
+                    Garotech Publishing.</div>
+                <div class="ref-item">Scott, W. H. (1994). <em>Barangay: Sixteenth-Century Philippine Culture and
+                        Society</em>. Ateneo de Manila University Press.</div>
+                <div class="ref-item">Jocano, F. L. (2001). <em>Filipino Prehistory: Rediscovering Precolonial
+                        Heritage</em>. Punlad Research House.</div>
+                <div class="ref-item">Mananzan, M. J. (1998). <em>Woman and Religion</em>. Institute of Women's Studies,
+                    St. Scholastica's College.</div>
+                <div class="ref-item">National Commission on Indigenous Peoples (NCIP). (2019). <em>Ethnolinguistic Map
+                        of the Philippines</em>. Republic of the Philippines.</div>
+                <div class="footer-credit">Created by: Glenn N. Galvo · Ancient Filipino Society ·
+                    2025 ✦</div>
+            </div>
+        </footer>
+
+    </div><!-- end page-wrap -->
+
+    <script>
+        // Modal data
+        const MODALS = {
+            babaylan: { icon: '🌙', color: '#6C3483', title: 'The Babaylan', text: 'The Babaylan served as the primary spiritual leader of pre-colonial Filipino communities. They performed rituals (pag-anito), communicated with ancestral spirits (anito), diagnosed illness, and led agricultural ceremonies. Mostly women, some were transgender men called bayog or asog. Colonization systematically persecuted the Babaylan, but their traditions survive in indigenous communities today.' },
+            trader: { icon: '⚖️', color: '#C9184A', title: 'Women Traders & Leaders', text: 'Pre-colonial Filipino women actively participated in markets and long-distance trade. They owned property independently of their husbands and retained all assets in divorce. Several historical accounts record women serving as political leaders — the Datu title was not exclusively male. Widows of chiefs often continued ruling, and some women led entire barangay alliances.' },
+            healer: { icon: '🌿', color: '#1E6B3A', title: 'Women Healers', text: 'Herbalism and healing were primarily feminine domains in pre-colonial Philippines. Women maintained vast knowledge of medicinal plants, midwifery, wound care, and bone-setting. As Babaylan, they combined spiritual and physical healing into one unified practice. This knowledge was transmitted orally through generations as a sophisticated indigenous medical system.' },
+            artisan: { icon: '🧵', color: '#6C3483', title: 'Master Artisans', text: "Weaving, pottery, and dyeing were central to women's cultural and economic lives. The t'nalak cloth of the T'boli, the piña fabric of Aklan, and the burnay pottery of Vigan are examples of feminine artistic mastery with deep spiritual significance. T'boli weavers only create designs received in dreams from Fu Dalu, the spirit of the abaca plant. These crafts were also important trade goods." },
+            literate: { icon: '📝', color: '#1A5276', title: 'Baybayin Literacy', text: 'Pre-colonial Filipinos had remarkably high literacy rates in the indigenous Baybayin script. BOTH men and women could read and write — documented by early Spanish colonizers who noted that almost all the islanders knew how to read and write. Women used Baybayin for correspondence, recording oral traditions, and business transactions. The Philippines was one of the most literate societies in 16th-century Southeast Asia.' },
+            warrior: { icon: '🗡️', color: '#C0392B', title: 'Women Warriors', text: "Accounts of female warriors exist throughout Filipino oral tradition. Princess Urduja of Pangasinan was mentioned by the traveler Ibn Battuta in 1349 — she commanded her own fleet and warriors. Women in highland societies like the Kalinga participated in traditional warfare. The warrior-woman archetype appears constantly in Philippine epics like the Hinilawod and Biag ni Lam-ang as a respected, powerful figure." }
+        };
+
+        function openModal(key) {
+            const d = MODALS[key];
+            document.getElementById('modal-icon').textContent = d.icon;
+            document.getElementById('modal-title').innerHTML = `<div style="font-family:var(--font-title);font-size:1.5rem;color:${d.color};margin-bottom:10px;">${d.title}</div>`;
+            document.getElementById('modal-text').innerHTML = `<p style="font-size:0.97rem;line-height:1.8;">${d.text}</p>`;
+            document.getElementById('modal-overlay').classList.add('open');
+        }
+        function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        // Pyramid
+        function togglePyr(id) { document.getElementById(id).classList.toggle('open'); }
+
+        // Group panels
+        function toggleGPanel(p) { p.classList.toggle('open'); }
+
+        // Map
+        function highlightMap(region) {
+            document.querySelectorAll('#phil-map path,#phil-map circle').forEach(el => { el.style.opacity = '0.3'; el.style.filter = ''; });
+            const cls = { luzon: '.r-luzon', visayas: '.r-visayas', mindanao: '.r-mindanao' };
+            document.querySelectorAll(cls[region]).forEach(el => { el.style.opacity = '1'; el.style.filter = 'brightness(1.25) drop-shadow(0 0 8px rgba(0,0,0,0.5))'; });
+            setTimeout(() => { document.querySelectorAll('#phil-map path,#phil-map circle').forEach(el => { el.style.opacity = '1'; el.style.filter = ''; }); }, 2200);
+        }
+
+        // Tooltip
+        const tip = document.getElementById('tip');
+        function showTip(e, title, text) {
+            tip.innerHTML = `<strong>${title}</strong><br>${text.replace(/\n/g, '<br>')}`;
+            tip.style.left = (e.clientX + 14) + 'px'; tip.style.top = (e.clientY - 10) + 'px';
+            tip.classList.add('show');
+        }
+        function hideTip() { tip.classList.remove('show'); }
+
+        // Scroll observer
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    e.target.querySelectorAll('.bar-fill').forEach(b => setTimeout(() => b.classList.add('go'), 300));
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+        const barObs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('go'); });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.bar-fill').forEach(b => barObs.observe(b));
+
+        // PDF export
+        function exportPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+            doc.setFillColor(139, 90, 43); doc.rect(0, 0, 210, 297, 'F');
+            doc.setFillColor(245, 230, 200); doc.rect(10, 10, 190, 277, 'F');
+            doc.setFontSize(20); doc.setFont('helvetica', 'bold'); doc.setTextColor(123, 63, 0);
+            doc.text('Ancient Filipino Society', 105, 28, { align: 'center' });
+            doc.setFontSize(12); doc.setTextColor(100, 50, 0);
+            doc.text('Women, Culture & Diversity — Module 2 Infographic', 105, 38, { align: 'center' });
+            doc.setDrawColor(123, 63, 0); doc.setLineWidth(0.8); doc.line(20, 42, 190, 42);
+            doc.setFontSize(10); doc.setFont('helvetica', 'normal'); doc.setTextColor(50, 20, 0);
+            const lines = [
+                'SECTION A: ANCIENT FILIPINO SOCIETY',
+                '  1. Datu — Supreme chieftain, hereditary or earned through valor',
+                '  2. Maharlika — Warrior nobles with land rights',
+                '  3. Timawa — Free citizens, no tribute owed',
+                '  4. Alipin — Bondspeople; freedom purchasable',
+                '',
+                'Economic: Agriculture 85%, Fishing 70%, Trade 62%, Weaving 50%, Hunting 38%',
+                'Trade partners: China, Borneo, Malay states, India (gold, spices, rattan)',
+                '',
+                'Laws: Elder mediation > Trial by ordeal > Datu ruling + wergild',
+                'Codes: Maragtas, Kalantiaw, Sanduguan blood compact',
+                '',
+                'SECTION B: ROLE OF WOMEN',
+                '  Babaylan: shaman-priestess, healer, spiritual community leader',
+                '  Rights: owned property, led trade, became Datu, chose spouse,',
+                '          practiced medicine, initiated divorce, literate in Baybayin',
+                '  Almost ALL pre-colonial Filipinos — male & female — were literate!',
+                '',
+                'SECTION C: ETHNOLINGUISTIC DISTRIBUTION',
+                '  Highlanders: Ifugao, Kalinga, T\'boli — Banaue Rice Terraces,',
+                '    warrior tattoos, gangsa music, t\'nalak dream-weaving',
+                '  Sea-Based: Badjao, Sama, Tausug — free-diving, boat-building,',
+                '    Sulu Sultanate est. 1457 CE, star navigation',
+                '  Mainstream: Tagalog, Cebuano, Ilocano, Hiligaynon, Kapampangan',
+                '    — Baybayin script, port cities, barter trade, epic oral poetry',
+                '',
+                '175+ living languages | 8 major groups = 90% of population',
+                '14-17 million indigenous peoples | IPRA (1997) ancestral rights',
+                '',
+                'REFERENCES',
+                '  Agoncillo, T.A. (1990). History of the Filipino People.',
+                '  Scott, W.H. (1994). Barangay. Ateneo de Manila UP.',
+                '  Jocano, F.L. (2001). Filipino Prehistory. Punlad.',
+                '  Mananzan, M.J. (1998). Woman and Religion.',
+                '  NCIP (2019). Ethnolinguistic Map of the Philippines.',
+            ];
+            let y = 52;
+            lines.forEach(line => {
+                if (line.startsWith('SECTION') || line === 'REFERENCES') {
+                    doc.setFont('helvetica', 'bold'); doc.setTextColor(123, 63, 0); doc.setFontSize(11);
+                } else {
+                    doc.setFont('helvetica', 'normal'); doc.setTextColor(50, 20, 0); doc.setFontSize(9.5);
+                }
+                doc.text(line, 18, y);
+                y += line === '' ? 4 : 7;
+                if (y > 278) { doc.addPage(); y = 20; }
+            });
+            doc.save('Ancient_Filipino_Society_Infographic.pdf');
+        }
+    </script>
+</body>
+
+</html>
